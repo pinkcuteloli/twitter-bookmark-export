@@ -84,9 +84,21 @@
         return fetch(url, {
             headers: {
                 "accept": "*/*",
+                "accept-language": "en-US,en;q=0.9,zh-TW;q=0.8,zh;q=0.7",
                 "authorization": creds.authorization,
+                "cache-control": "no-cache",
                 "content-type": "application/json",
+                "pragma": "no-cache",
+                "sec-ch-ua": '"Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"',
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": '"macOS"',
+                "sec-fetch-dest": "empty",
+                "sec-fetch-mode": "cors",
+                "sec-fetch-site": "same-origin",
+                "sec-gpc": "1",
                 "x-csrf-token": creds["x-csrf-token"],
+                "x-twitter-active-user": "yes",
+                "x-twitter-auth-type": "OAuth2Session",
                 "x-twitter-client-language": "ja"
             },
             referrer: "https://x.com/i/bookmarks",
